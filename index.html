@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>38,40€</title>
+	<style>
+		* {
+			font-family: sans;
+		}
+		html {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
+		}
+		body {
+			text-align:center;
+		}
+		h1 {
+			transition: 1s ease-out;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>1000</h1>
+	<script>
+var element = document.querySelector("h1");
+function  update() {
+	element.style.fontSize = Math.floor(Math.random() * 800 + 100) + "%";
+}
+update();
+setInterval(update, 900);
+	</script>
+</body>
+
+</html>
+
+
